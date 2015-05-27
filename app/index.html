@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>modal-css</title>
+
+  <!-- build:css css/app.min.css -->
+  <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- endbuild -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--[if lt IE 10]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/"><strong>upgrade your browser</strong></a> to improve your experience.</p>
+  <![endif]-->
+
+  <a href="#modal">Open Modal</a>
+
+  <div class="modal" id="modal" aria-hidden="true" >
+    <div class="modal-dialog" >
+      <div class="modal-header">
+        <h2>Modal in CSS?</h2>
+        <a href="#close" class="modal-close">X</a>
+      </div>
+      <div class="modal-body">
+        <p>One modal example here! :D</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#close">Close!</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- build:js js/app.min.js -->
+  <script src="js/app.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

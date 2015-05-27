@@ -1,0 +1,86 @@
+/* app css stylesheet */
+.browsehappy {
+  background: rgb(14,14,14); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(14,14,14,1) 20%, rgba(125,126,125,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(20%,rgba(14,14,14,1)), color-stop(100%,rgba(125,126,125,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg,  rgba(14,14,14,1) 20%,rgba(125,126,125,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg,  rgba(14,14,14,1) 20%,rgba(125,126,125,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg,  rgba(14,14,14,1) 20%,rgba(125,126,125,1) 100%); /* IE10+ */
+  background: linear-gradient(135deg,  rgba(14,14,14,1) 20%,rgba(125,126,125,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#7d7e7d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  color: #FFFFFF;
+  margin: 0 0 1em;
+  padding: 0.2em 1em;
+}
+/* example modal */
+.modal {
+  position: fixed;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  overflow-y: auto;
+  pointer-events: none;
+}
+.modal:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modal:target > .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  top: 0px;
+}
+.modal > .modal-dialog {
+  width: 400px;
+  position: relative;
+  margin: 50px auto;
+  padding: 0;
+  background: #fff;
+
+  -webkit-transform: translate(0, -500%);
+  -ms-transform: translate(0, -500%);
+  transform: translate(0, -500%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal-header {
+  border-bottom: #eeeeee solid 1px;
+}
+.modal-body {
+  padding: 20px;
+}
+.modal-footer {
+  border-top: #eeeeee solid 1px;
+  text-align: right;
+}
+.modal-header,
+.modal-footer {
+  padding: 10px 20px;
+}
+.modal-close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+.modal-close:hover {
+  background: #00d9ff;
+}
